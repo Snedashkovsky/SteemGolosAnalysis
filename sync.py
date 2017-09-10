@@ -8,7 +8,6 @@ import json
 import time
 import sys
 import os
-# import pistonapi as steemapi
 
 rpc = SteemNodeRPC("ws://10.168.0.217:8096", apis=["follow", "database"])
 mongo = MongoClient()

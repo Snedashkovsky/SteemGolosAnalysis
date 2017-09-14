@@ -9,7 +9,7 @@ import time
 import sys
 import os
 
-rpc = SteemNodeRPC("ws://10.168.0.217:8096", apis=["follow", "database"])
+rpc = SteemNodeRPC("wss://ws.golos.io", apis=["follow", "database"]) # "ws://10.168.0.217:8096"
 mongo = MongoClient()
 db = mongo.steemdb
 

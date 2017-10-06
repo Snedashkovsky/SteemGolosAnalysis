@@ -14,4 +14,4 @@ cursor = db.comment.find({
 comment_df = pd.DataFrame(columns=['title', '_id', 'body'])
 for comment in cursor:
     comment_df = comment_df.append(pd.DataFrame(comment, index=[len(comment_df)]))
-print('Load topics: ', len(df))
+print('Load topics: ', len(comment_df))
